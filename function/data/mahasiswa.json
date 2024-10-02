@@ -1,0 +1,14 @@
+{
+  "jalurMasuk": [
+      {"nama":"SNMPTN NON KIP KULIAH", "jumlah": "284"},
+      {"nama":"SNMPTN KIP KULIAH", "jumlah": "166"},
+      {"nama":"SBMPTN NON KIP KULIAH", "jumlah": "362"},
+      {"nama":"SBMPTN KIP KULIAH", "jumlah": "141"},
+      {"nama":"SMMPTN NON KIP KULIAH", "jumlah": "157"},
+      {"nama":"ADIK/ADEM/TKI", "jumlah": "5"},
+      {"nama":"PRESTASI", "jumlah": "4"}
+  ],
+  "jenisKelamin": [
+      {"nama":"TEKNIK INFORMATIKA", "mahasiswa": "1119", "lakilaki": "561", "perempuan": "558"}
+  ]
+}
