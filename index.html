@@ -34,16 +34,16 @@
 							</div>
 							<div class="app-navbar flex-shrink-0">
 								<div class="app-navbar-item">
-									<span class="d-flex flex-column bg-light text-end rounded px-4 py-1 ms-3 ms-lg-6">
-										<span class="text-gray-500 fs-2 fw-bold">Lhokseumawe</span>
+									<span class="d-flex flex-column bg-light text-end rounded px-5 ps-20 py-2 ms-3 ms-lg-6">
+										<span class="text-gray-700 fs-2 fw-bold">Lhokseumawe</span>
 										<span class="text-gray-800 fs-1 fw-bold" id="temperature">-</span>
 									</span>
-									<span class="d-flex flex-column bg-light text-end rounded px-4 py-1 ms-3 ms-lg-6">
-										<span class="text-gray-500 fs-2 fw-bold" id="day">Rabu</span>
+									<span class="d-flex flex-column bg-light text-end rounded px-4 py-2 ms-3 ms-lg-6">
+										<span class="text-gray-700 fs-2 fw-bold" id="day">Rabu</span>
 										<span class="text-gray-800 fs-1 fw-bold" id="date">10 Oktober 2024</span>
 									</span>
 									<span class="d-flex flex-column bg-light text-end rounded px-4 py-1 ms-3 ms-lg-6">
-										<span class="text-gray-800 fs-3hx fw-bold py-1" id="clock">14:45 WIB</span>
+										<span class="text-gray-800 fs-3hx fw-bold py-0" id="clock">14:45 WIB</span>
 									</span>
 								</div>
 								<div class="app-navbar-item ms-5">
@@ -89,7 +89,7 @@
 					<div class="app-header-secondary">
 						<div class="app-container container-fluid bg-dark " id="kt_app_header_secondary_container">
 							<div>
-								<marquee class="text-white fs-4hx pb-10" behavior="" direction="" id="text"> Selamat Datang di Informatics Command Center</marquee>
+								<marquee class="text-white fs-4hx mt-2 lh-1" behavior="" direction="" id="text"> Selamat Datang di Informatics Command Center</marquee>
 							</div>
 						</div>
 					</div>
@@ -285,6 +285,24 @@
 			<i class="ki-outline ki-arrow-up"></i>
 		</div>
 			
+
+		<script>
+			const btn = document.getElementById('fullscreen-btn');
+	
+			btn.addEventListener('click', () => {
+				const docElm = document.documentElement;
+	
+				if (docElm.requestFullscreen) {
+					docElm.requestFullscreen();
+				} else if (docElm.mozRequestFullScreen) { // Firefox
+					docElm.mozRequestFullScreen();
+				} else if (docElm.webkitRequestFullscreen) { // Chrome, Safari and Opera
+					docElm.webkitRequestFullscreen();
+				} else if (docElm.msRequestFullscreen) { // IE/Edge
+					docElm.msRequestFullscreen();
+				}
+			});
+		</script>
 		<script>var hostUrl = "assets/";</script>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
